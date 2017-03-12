@@ -1,0 +1,403 @@
+#container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 100px;
+}
+#overlay-menu {
+  width: 100px;
+  height: 50px;
+}
+.menuButton {
+  background-color: transparent;
+  text-indent:0;
+  border:5px solid white;
+  color:#fff;
+  font-size:15px;
+  font-weight:bold;
+}
+.menuButton:hover {
+  background-color:#5ABDAE;
+  color: white;
+
+}
+.menuButton:active {
+  position:relative;
+  top:1px;
+}
+
+
+.overlay {
+  position: fixed;
+  width: 50%;
+  height: 80%;
+  top: 10%;
+  left: 25%;
+  background: rgba(	90, 189, 174, 1);
+  overflow-y: scroll;
+  overflow-x: none;
+  z-index: 999;
+}
+
+.overlay h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.overlay h2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  height: 60%;
+  font-size: 80px;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.overlay p {
+  align-content: center;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+.overlay ul li {
+  height: 20%;
+  color: white;
+  align-text: center;
+  position: relative;
+}
+
+.overlay li {
+  font-size: 20px;
+}
+
+.overlay-close {
+  margin-top: 5%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  background: transparent;
+  height: 2.5em;
+  width: 2.5em;
+  overflow: hidden;
+  border: none;
+  background-image: url("/assets/close.svg");
+  text-indent: 200%;
+  outline: none;
+  z-index: 100;
+  background-repeat: no-repeat;
+}
+.overlay-data {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.skill_icon {
+  height: 50px;
+  width: auto;
+  margin: 10px;
+}
+
+.skill_icon2 {
+  height: 80px;
+  width: auto;
+  margin: 20px;
+}
+
+// Start of the 2nd overlay
+
+.overlay2 {
+  position: fixed;
+  width: 70%;
+  height: 80%;
+  top: 10%;
+  left: 15%;
+  background: rgba(	90, 189, 174, 1);
+  overflow-y: scroll;
+  overflow-x: none;
+  z-index: 1000
+}
+
+.overlay2 h1 {
+  text-align: center;
+  color: white;
+}
+
+.overlay2 h2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.overlay2 nav {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  height: 60%;
+  font-size: 80px;
+}
+.overlay2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.overlay2 p {
+  align-content: center;
+  color: white;
+  text-align: center;
+  margin: 20px 30px 0 30px;
+}
+.overlay2 ul li {
+  height: 20%;
+  color: white;
+  align-text: center;
+  position: relative;
+}
+
+.overlay2 li {
+  font-size: 20px;
+}
+
+.overlay2-close {
+  margin-top: 5%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  background: transparent;
+  height: 2.5em;
+  width: 2.5em;
+  overflow: hidden;
+  border: none;
+  background-image: url("/assets/close.svg");
+  text-indent: 200%;
+  outline: none;
+  z-index: 100;
+  background-repeat: no-repeat;
+}
+.overlay2-data {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay2-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+// Start of 3rd overlay
+.overlay3 {
+  position: fixed;
+  width: 70%;
+  height: 80%;
+  top: 10%;
+  left: 15%;
+  background: rgba(	90, 189, 174, 1);
+  overflow-y: scroll;
+  overflow-x: none;
+  z-index: 1000
+}
+
+.overlay3 h1 {
+  text-align: center;
+  color: white;
+}
+
+.overlay3 h2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.overlay3 nav {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  height: 60%;
+  font-size: 80px;
+}
+.overlay3 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.overlay3 p {
+  align-content: center;
+  color: white;
+  text-align: center;
+  margin: 20px 10px 0 30px
+}
+.overlay3 ul li {
+  height: 20%;
+  color: white;
+  align-text: center;
+  position: relative;
+  margin: 20px 20px 0 20px
+}
+
+
+.overlay3-close {
+  margin-top: 5%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  background: transparent;
+  height: 2.5em;
+  width: 2.5em;
+  overflow: hidden;
+  border: none;
+  background-image: url("/assets/close.svg");
+  text-indent: 200%;
+  outline: none;
+  z-index: 100;
+  background-repeat: no-repeat;
+}
+.overlay3-data {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay3-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+// Start of 4th overlay
+
+.overlay4 {
+  position: fixed;
+  width: 70%;
+  height: 80%;
+  top: 10%;
+  left: 15%;
+  background: rgba(	90, 189, 174, 1);
+  overflow-y: scroll;
+  overflow-x: none;
+  z-index: 1000
+}
+
+.overlay4 h1 {
+  text-align: center;
+  color: white;
+}
+
+.overlay4 h2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.overlay4 nav {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  height: 60%;
+  font-size: 80px;
+}
+.overlay4 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.overlay4 p {
+  align-content: center;
+  color: white;
+  text-align: center;
+  margin: 20px 10px 0 30px
+
+}
+.overlay4 ul li {
+  height: 20%;
+  color: white;
+  align-text: center;
+  position: relative;
+}
+
+.overlay4 li {
+  font-size: 20px;
+}
+
+.overlay4-close {
+  margin-top: 5%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  background: transparent;
+  height: 2.5em;
+  width: 2.5em;
+  overflow: hidden;
+  border: none;
+  background-image: url("/assets/close.svg");
+  text-indent: 200%;
+  outline: none;
+  z-index: 100;
+  background-repeat: no-repeat;
+}
+.overlay4-data {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay4-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.img-thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
