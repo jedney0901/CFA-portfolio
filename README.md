@@ -19,7 +19,9 @@ Looking at my original designs and final designs I came to realise that there wa
 
 You can see the original drawings here:
 
-Here are the digital wireframes that I did:
+![img_0238](https://cloud.githubusercontent.com/assets/25731546/23837379/5bf8da3c-07db-11e7-9fbd-8fc8e0bdbdf7.JPG)
+
+![img_0237](https://cloud.githubusercontent.com/assets/25731546/23837390/85d56410-07db-11e7-9842-9132b6c15bac.JPG)
 
 # Design Summary:
 
