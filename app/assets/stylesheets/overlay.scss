@@ -125,10 +125,17 @@
 }
 
 .skill_icon2 {
-  height: 80px;
-  width: auto;
-  margin: 20px;
+  height: auto;
+  margin-top: 80px;
+  max-width: 120px;
 }
+
+.skill_icon3 {
+  height: auto;
+  margin-top: 80px;
+  max-width: 160px;
+}
+
 
 // Start of the 2nd overlay
 
@@ -177,7 +184,6 @@
   margin: 20px 30px 0 30px;
 }
 .overlay2 ul li {
-  height: 20%;
   color: white;
   align-text: center;
   position: relative;

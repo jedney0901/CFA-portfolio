@@ -12,40 +12,36 @@
       <button type="button" class="overlay-close">Close</button>
 
       <div class="row">
-        <div class="col-md-12">
-          <h1>Who am I?</h1>
-        </div>
+        <h1>Who am I?</h1>
         <div class="col-md-8 col-md-offset-2">
           <p>Hi there! My name is Josh Edney and I am a developer in-the-works based in Sydney with the dream of travelling the world working and experiencing everything the world has to offer.</p>
           <p>Previously I have worked for 4 years in a B2B Marketing role and have recently decided to shift my life and gear it towards the things I am passionate about - the environment, technology and surfing.</p>
           <p>This portfolio explains all you need to know about me, I am very serious about the work I do but always strive to have a healthy amount of fun and enjoyment in what I do.</p>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="col-md-5 col-md-offset-1">
-              <h2>My Skills</h2>
-              <p>My previous experience in marketing has provided a strong understanding of building and developing business concepts to achieve results. Currently I am doing a 6-month full time coding course to help take me to the next stage in my career where I can apply practical skills with business knowledge.</p>
-            </div>
-            <div class="col-md-5">
-              <h2>My dreams</h2>
-
-              <p>I have had many dreams of what I wanted to do when I was older, one of my recent ideas is to travel helping hospitality and small businesses become more technologically able as their populations shift towards this change.</p>
-              <p>My other main goal I have in my life is to create/be part of a start-up utilising my previous marketing experience to help innovate and develop ideas from concept to finalisation.</p>
-            </div>
+        <div class="col-md-12">
+          <div class="col-md-5 col-md-offset-1">
+            <h2>My Skills</h2>
+            <p>My previous experience in marketing has provided a strong understanding of building and developing business concepts to achieve results. Currently I am doing a 6-month full time coding course to help take me to the next stage in my career where I can apply practical skills with business knowledge.</p>
           </div>
-          <div class="col-md-12 col-md-offset-2">
-            <div class="col-md-2 col-sm-6 ">
-              <img src="<%= asset_path 'ruby-rails.png' %>" alt="Ruby on Rails" class = "skill_icon">
-            </div>
-            <div class="col-md-2 col-sm-6">
-              <img src="<%= asset_path 'html-css.png' %>" alt="Ruby on Rails" class = "skill_icon">
-            </div>
-            <div class="col-md-2 col-sm-6">
-              <img src="<%= asset_path 'node-logo.png' %>" alt="Ruby on Rails" class = "skill_icon">
-            </div>
-            <div class="col-md-2 col-sm-6">
-              <img src="<%= asset_path 'react.png' %>" alt="Ruby on Rails" class = "skill_icon">
-            </div>
+          <div class="col-md-5">
+            <h2>My dreams</h2>
+
+            <p>I have had many dreams of what I wanted to do when I was older, one of my recent ideas is to travel helping hospitality and small businesses become more technologically able as their populations shift towards this change.</p>
+            <p>My other main goal I have in my life is to create/be part of a start-up utilising my previous marketing experience to help innovate and develop ideas from concept to finalisation.</p>
+          </div>
+        </div>
+        <div class="col-md-12 col-md-offset-2">
+          <div class="col-md-2 col-sm-6 ">
+            <img src="<%= asset_path 'ruby-rails.png' %>" alt="Ruby on Rails" class = "skill_icon">
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <img src="<%= asset_path 'html-css.png' %>" alt="Ruby on Rails" class = "skill_icon">
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <img src="<%= asset_path 'node-logo.png' %>" alt="Ruby on Rails" class = "skill_icon">
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <img src="<%= asset_path 'react.png' %>" alt="Ruby on Rails" class = "skill_icon">
           </div>
         </div>
       </div>
@@ -57,15 +53,11 @@
 <div class="container portfolio_section">
   <div class="row" id = portfolio>
     <div class="col-md-12 align-content">
-      <h1>Portfolio collection</h1>
+      <h1 style="color:black;">Portfolio collection</h1>
     </div>
   </div>
   <div class="row">
     <div class="col-md-4">
-      <div class="portfolio-box portfolio-imagett" style = "<%= asset_path 'zoom-in.svg' %>">
-        <img src="<%= asset_path 'zoom-in.svg' %>" alt="zoom in icon" class="zoom-in-icon">
-        <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "trutradie">Learn More</a>
-      </div>
       <div class="subtext">
         <ul>
           <li><h2>Trutradie</h2></li>
@@ -74,6 +66,10 @@
             <p>The key difference for this was that this aimed at servicing the needs of tradies instead of the consumers, in the same way that Alibaba services their customers.</p>
           </li>
         </ul>
+      </div>
+      <div class="portfolio-box portfolio-imagett" style = "<%= asset_path 'zoom-in.svg' %>">
+        <img src="<%= asset_path 'zoom-in.svg' %>" alt="zoom in icon" class="zoom-in-icon">
+        <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "trutradie">Learn More</a>
       </div>
     </div>
     <div class="overlay2 overlay-data">
@@ -98,10 +94,6 @@
     </div>
     <!-- Dicker Data -->
     <div class="col-md-4 col-sm-12">
-      <div class="portfolio-box portfolio-imagedd">
-        <img src="<%= asset_path 'zoom-in.svg' %>" alt="zoom in icon" class="zoom-in-icon">
-        <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "dickerdata">Learn More</a>
-      </div>
       <div class="subtext">
         <ul>
           <li><h2>Dickerdata</h2></li>
@@ -109,7 +101,11 @@
           <li>
             <p>Serviced this project as a project management lead developed microsites for them to drive traffic to. This required a large level of thinking and provided the challenege and answer to what the required functionality for marketing teams are at the moment.</p>
           </li>
-        </div>
+      </div>
+      <div class="portfolio-box portfolio-imagedd">
+        <img src="<%= asset_path 'zoom-in.svg' %>" alt="zoom in icon" class="zoom-in-icon">
+        <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "dickerdata">Learn More</a>
+      </div>
       </div>
       <div class="overlay3 overlay-data">
         <button type="button" class="overlay-close">Close</button>
@@ -137,19 +133,18 @@
       </div>
       <!-- Uberlawyer portfolio info -->
       <div class="col-md-4 col-sm-12">
-        <div class="portfolio-box portfolio-imageul">
-          <img src="<%= asset_path 'zoom-in.svg' %>" alt="zoom in icon" class="zoom-in-icon">
-          <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "uberlawyer">Learn More</a>
-        </div>
         <div class="subtext">
           <ul>
             <li><h2>Uberlawyer</h2></li>
             <hr>
             <p>Don't let the name fool you, this concept has legs which requires a significant lefel of disruption and development to become an MVP. Currently in it's planning stages, Uberlawyer is based on the concept of underutilised law resources, changing workplace dynamics and an oversupply of lawyers in the industry.</p>
-          </div>
+        </div>
+        <div class="portfolio-box portfolio-imageul">
+          <img src="<%= asset_path 'zoom-in.svg' %>" alt="zoom in icon" class="zoom-in-icon">
+          <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "uberlawyer">Learn More</a>
+        </div>
         </div>
       </div>
-    </div>
     <div class="overlay4 overlay-data">
       <button type="button" class="overlay-close">Close</button>
       <div class="row">
@@ -166,25 +161,15 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 col-md-offset-2">
-        <div class="col-md-2">
-          <img src="<%= asset_path 'ruby-rails.png' %>" alt="Ruby on Rails" class = "skill_icon2">
-        </div>
-        <div class="col-md-2">
-          <img src="<%= asset_path 'html-css.png' %>" alt="HTML and CSS" class = "skill_icon2">
-        </div>
-        <div class="col-md-2">
-          <img src="<%= asset_path 'node-logo.png' %>" alt="Node" class = "skill_icon2">
-        </div>
-        <div class="col-md-2">
-          <img src="<%= asset_path 'react.png' %>" alt="React" class = "skill_icon2">
-        </div>
+    <div class="col-md-12" align="center">
+      <div class="col-sm-6 col-md-3 col-md-offset-3 col-sm-offset-1">
+        <img src="<%= asset_path 'ruby-rails.png' %>" alt="Ruby on Rails" class = "skill_icon2 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-1">
+        <img src="<%= asset_path 'html-css.png' %>" alt=" HTML and CSS" class = "skill_icon2 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-">
+        <img src="<%= asset_path 'node-logo.png' %>" alt="Node" class = "skill_icon3 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0  col-xs-6 col-xs-offset-0">
+        <img src="<%= asset_path 'react.png' %>" alt="React" class = "skill_icon3 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-6 col-xs-offset-0">
       </div>
     </div>
   </div>
-
-
   <!-- Contact Me page -->
 
   <div class="container-fluid contact_section" id = contact>
@@ -192,6 +177,7 @@
 
 
       <div class="row">
+        <h1>Looking for someone to join your team or have a special project?</h1>
         <div class="col-md-6">
           <form class="well form-horizontal" action=" " method="post"  id="contact_form">
             <fieldset>
