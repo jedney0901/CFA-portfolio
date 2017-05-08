@@ -32,15 +32,21 @@
 
 
 .overlay {
-  position: fixed;
-  width: 50%;
-  height: 80%;
-  top: 10%;
-  left: 25%;
-  background: rgba(	90, 189, 174, 1);
+  width: 800px;
+  max-width: 100%;
+  height: 600px;
+  max-height: 100%;
+  background: #5798A0;
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
   z-index: 999;
+  opacity: 0.97;
+  border-radius: 10px;
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .overlay h1 {
@@ -74,8 +80,8 @@
   align-content: center;
   color: white;
   text-align: center;
-  margin-top: 10px;
 }
+
 .overlay ul li {
   height: 20%;
   color: white;
@@ -109,10 +115,10 @@
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-  transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;  overflow-x: none;
 }
 .overlay-open {
-  opacity: 1;
+  opacity: 0.97;
   visibility: visible;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -122,6 +128,13 @@
   height: 50px;
   width: auto;
   margin: 10px;
+}
+
+.spacer {
+  height: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
 }
 
 .skill_icon2 {
@@ -140,14 +153,17 @@
 // Start of the 2nd overlay
 
 .overlay2 {
-  position: fixed;
-  width: 70%;
+  width: 800px;
   height: 80%;
-  top: 10%;
-  left: 15%;
-  background: rgba(	90, 189, 174, 1);
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  background: #5798A0;
+  opacity: 0.97;
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
   z-index: 1000
 }
 
@@ -226,14 +242,17 @@
 
 // Start of 3rd overlay
 .overlay3 {
-  position: fixed;
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
   width: 70%;
   height: 80%;
-  top: 10%;
-  left: 15%;
-  background: rgba(	90, 189, 174, 1);
+  background: #5798A0;
+  opacity: 0.97;
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
   z-index: 1000
 }
 
@@ -270,7 +289,6 @@
   margin: 20px 10px 0 30px
 }
 .overlay3 ul li {
-  height: 20%;
   color: white;
   align-text: center;
   position: relative;
@@ -309,21 +327,31 @@
   transition: opacity 0.5s;
 }
 
+
+
 // Start of 4th overlay
 
 .overlay4 {
-  position: fixed;
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
   width: 70%;
   height: 80%;
-  top: 10%;
-  left: 15%;
-  background: rgba(	90, 189, 174, 1);
+  background: #5798A0;
+  opacity: 0.97;
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
   z-index: 1000
 }
 
 .overlay4 h1 {
+  text-align: center;
+  color: white;
+}
+
+.overlay4 div {
   text-align: center;
   color: white;
 }
@@ -359,7 +387,6 @@
 .overlay4 ul li {
   height: 20%;
   color: white;
-  align-text: center;
   position: relative;
 }
 
@@ -398,12 +425,299 @@
   transition: opacity 0.5s;
 }
 
+// Overlay 5 start of CSS
+
+.overlay5 {
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  width: 70%;
+  height: 80%;
+  background: #5798A0;
+  opacity: 0.97;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1000
+}
+
+.overlay5 h1 {
+  text-align: center;
+  color: white;
+}
+
+.overlay5 div {
+  text-align: center;
+  color: white;
+}
+
+.overlay5 h2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.overlay5 nav {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  height: 60%;
+  font-size: 80px;
+}
+.overlay5 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.overlay5 p {
+  align-content: center;
+  color: white;
+  text-align: center;
+  margin: 20px 10px 0 30px
+
+}
+.overlay5 ul li {
+  height: 20%;
+  color: white;
+  position: relative;
+}
+
+.overlay5 li {
+  font-size: 20px;
+}
+
+.overlay5-close {
+  margin-top: 5%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  background: transparent;
+  height: 2.5em;
+  width: 2.5em;
+  overflow: hidden;
+  border: none;
+  background-image: url("/assets/close.svg");
+  text-indent: 200%;
+  outline: none;
+  z-index: 100;
+  background-repeat: no-repeat;
+}
+.overlay5-data {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay5-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+// Overlay 6 CSS
+
+
+.overlay6 {
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  width: 70%;
+  height: 80%;
+  background: #5798A0;
+  opacity: 0.97;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1000
+}
+
+.overlay6 h1 {
+  text-align: center;
+  color: white;
+}
+
+.overlay6 div {
+  text-align: center;
+  color: white;
+}
+
+.overlay6 h2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.overlay6 nav {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  height: 60%;
+  font-size: 80px;
+}
+.overlay6 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.overlay6 p {
+  align-content: center;
+  color: white;
+  text-align: center;
+  margin: 20px 10px 0 30px
+
+}
+.overlay6 ul li {
+  height: 20%;
+  color: white;
+  position: relative;
+}
+
+.overlay6 li {
+  font-size: 20px;
+}
+
+.overlay6-close {
+  margin-top: 5%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  background: transparent;
+  height: 2.5em;
+  width: 2.5em;
+  overflow: hidden;
+  border: none;
+  background-image: url("/assets/close.svg");
+  text-indent: 200%;
+  outline: none;
+  z-index: 100;
+  background-repeat: no-repeat;
+}
+.overlay6-data {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay6-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+// Start of overlay 7 CSS
+
+.overlay7 {
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  width: 70%;
+  height: 80%;
+  background: #5798A0;
+  opacity: 0.97;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1000
+}
+
+.overlay7 h1 {
+  text-align: center;
+  color: white;
+}
+
+.overlay7 div {
+  text-align: center;
+  color: white;
+}
+
+.overlay7 h2 {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.overlay7 nav {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  height: 60%;
+  font-size: 80px;
+}
+.overlay7 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.overlay7 p {
+  align-content: center;
+  color: white;
+  text-align: center;
+  margin: 20px 10px 0 30px
+
+}
+.overlay7 ul li {
+  height: 20%;
+  color: white;
+  position: relative;
+}
+
+.overlay6 li {
+  font-size: 20px;
+}
+
+.overlay7-close {
+  margin-top: 5%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+  background: transparent;
+  height: 2.5em;
+  width: 2.5em;
+  overflow: hidden;
+  border: none;
+  background-image: url("/assets/close.svg");
+  text-indent: 200%;
+  outline: none;
+  z-index: 100;
+  background-repeat: no-repeat;
+}
+.overlay7-data {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay7-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+// Overlay Image Thumbnail
+
 .img-thumbnail {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 20px;
 }
