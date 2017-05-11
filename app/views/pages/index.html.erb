@@ -2,7 +2,7 @@
 <!-- About Section Container -->
 <div class="container-fluid about_section" id = about>
   <div class="row">
-    <div class="align-content-headers">
+    <div class="align-content-headers h1white">
       <h1>Welcome to my portfolio :)</br> enjoy yourself</h1>
     </div>
     <!-- Div for button -->
@@ -13,11 +13,11 @@
       <button type="button" class="overlay-close">Close</button>
 
       <div class="row">
-        <h1>Who am I?</h1>
-        <div class="col-md-8 col-md-offset-2">
-          <p>Hi there! My name is Josh Edney and I am a developer in-the-works based in Sydney with the dream of travelling the world working and experiencing everything the world has to offer.</p>
-          <p>Previously I have worked for 4 years in a B2B Marketing role and have recently decided to shift my life and gear it towards the things I am passionate about - the environment, technology and surfing.</p>
-          <p>This portfolio explains all you need to know about me, I am very serious about the work I do but always strive to have a healthy amount of fun and enjoyment in what I do.</p>
+        <h1 class="h1white">Who am I?</h1>
+        <div class="col-md-10 col-md-offset-1">
+          <p>I am a surfer, a marketer and sometimes I am also the guy that says YES to way too many things in one day, thinking that i can make it all happen. I would say that I'm consistently optimistic about everything and it work almost always pretty amazingly well. My girlfriend and family will probably tell you the opposite as I always somehow have something on when it's their birthday weekend, but that s an other story. Except the occasional off day, I enjoy living life, being active, and laughing a lot. And, lucky you in addition of all of that i also work really well and put the same energy into my worklife. I love seeing a project develop and an idea become a reality.</p>
+
+          <p>But enough about me, scroll down and have a look at my portfolio.</p>
         </div>
         <div class="col-md-12">
           <div class="col-md-5 col-md-offset-1">
@@ -111,7 +111,6 @@
           </div>
           <div class="col-md-6">
               <img src="<%= asset_path 'DickerHP1.png' %>" alt="Img1" class="img-thumbnail">
-              <img src="<%= asset_path 'DickerHP2.png' %>" alt="Img1" class="img-thumbnail">
           </div>
         </div>
       </div>
@@ -164,7 +163,7 @@
         <h2>Virtual Classroom</h2>
         <hr>
       </div>
-      <div class="portfolio-box portfolio-imagett" style = "<%= asset_path 'zoom-in.svg' %>">
+      <div class="portfolio-box portfolio-imagevc" style = "<%= asset_path 'zoom-in.svg' %>">
         <div class="captiontext">
           <p class="zoom-in-icon">Development of an application similar to those that you see such as Hipages.com.au and Serviceseeking.com.au.</p>
         </div>
@@ -182,31 +181,65 @@
           <img src="<%= asset_path 'tt_lp.png' %>" alt="Img1" class="img-thumbnail">
         </div>
         <div class="col-md-6">
-          This project presented my first real opportunity to work on a large scale application using a two market system. The core concept behind this was to build a system based on one goal: to make tradies business viable through the digital world. I was required as part of the marketing team which allowed me to understand and discover different approached to building the app.</p>
-          As there are a number hell of organisations which offer basic similar services we broke down our product by the target audience - customers, tradies and misc. Customer side was fairly simple as this runs on a similar model that other organisations currrently employ and works well. The second element is based around tradies and what their current issues are with the services currently available. We then separated the core product concept, the innovational elements and then the extra special add-ons for the app.
+          This app was designed to help the youth of Australia find an online place where they can express themselves politically and re-align themselves to politics using the <a href="https://votecompass.abc.net.au">Vote Compass App</a>. For this project I used a ruby on rails structure utilising the postgresql framework so that we were able to deploy directly to heroku without any issues. As we are planning on deploying through Heroku we also must come up with a way which allows the app to access images and I decided to implement AWS S3. <br><br>
+          This incorporated the development of a debate interface which takes in one topic from the debate owner and then gives people the ability to argue for and against depending on which side they want to choose. As this ap
         </div>
       </div>
     </div>
 
     <!-- ChangeApp Description -->
 
-    <div class="row">
+    <div class="col-md-4">
+      <div class="subtext">
+        <h2>ChangeApp</h2>
+        <hr>
+      </div>
+      <div class="portfolio-box portfolio-imageca" style = "<%= asset_path 'zoom-in.svg' %>">
+        <div class="captiontext">
+          <p class="zoom-in-icon">Development of an application similar to those that you see such as Hipages.com.au and Serviceseeking.com.au.</p>
+        </div>
+        <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "changeapp">Learn More</a>
+      </div>
+    </div>
+
+
+    <!-- ChangeApp overlay content -->
+    <div class="overlay6 overlay-data">
+      <button type="button" class="overlay-close">Close</button>
+      <div class="col-md-12">
+        <h1>Trutradie</h1>
+        <div class="col-md-6">
+          <img src="<%= asset_path 'tt_lp.png' %>" alt="Img1" class="img-thumbnail">
+        </div>
+        <div class="col-md-6">
+          ChangeApp is designed to do three core things to help the youth of today:
+          <ul>
+            <li>- Identify where they sit on the political spectrum</li>
+            <li>- Be able to interact and discuss various political issues with other groups/individuals</li>
+            <li>- To be sharable amongst the community to help spread different opinions and sentiment in a comprehensive manner.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recipe Finder Description -->
+
       <div class="col-md-4">
         <div class="subtext">
-          <h2>ChangeApp</h2>
+          <h2>Recipe-Finder</h2>
           <hr>
         </div>
         <div class="portfolio-box portfolio-imagett" style = "<%= asset_path 'zoom-in.svg' %>">
           <div class="captiontext">
             <p class="zoom-in-icon">Development of an application similar to those that you see such as Hipages.com.au and Serviceseeking.com.au.</p>
           </div>
-          <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "changeapp">Learn More</a>
+          <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "recipe-finder">Learn More</a>
         </div>
       </div>
 
 
-      <!-- ChangeApp overlay content -->
-      <div class="overlay6 overlay-data">
+      <!-- Recipe Finder overlay content -->
+      <div class="overlay7 overlay-data">
         <button type="button" class="overlay-close">Close</button>
         <div class="col-md-12">
           <h1>Trutradie</h1>
@@ -219,42 +252,7 @@
           </div>
         </div>
       </div>
-
-      <!-- Recipe Finder Description -->
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="subtext">
-            <h2>Recipe-Finder</h2>
-            <hr>
-          </div>
-          <div class="portfolio-box portfolio-imagett" style = "<%= asset_path 'zoom-in.svg' %>">
-            <div class="captiontext">
-              <p class="zoom-in-icon">Development of an application similar to those that you see such as Hipages.com.au and Serviceseeking.com.au.</p>
-            </div>
-            <a type="submit" class="btn btn-default zoom-in-button btn-success" id = "recipe-finder">Learn More</a>
-          </div>
-        </div>
-
-
-        <!-- Recipe Finder overlay content -->
-        <div class="overlay7 overlay-data">
-          <button type="button" class="overlay-close">Close</button>
-          <div class="col-md-12">
-            <h1>Trutradie</h1>
-            <div class="col-md-6">
-              <img src="<%= asset_path 'tt_lp.png' %>" alt="Img1" class="img-thumbnail">
-            </div>
-            <div class="col-md-6">
-              This project presented my first real opportunity to work on a large scale application using a two market system. The core concept behind this was to build a system based on one goal: to make tradies business viable through the digital world. I was required as part of the marketing team which allowed me to understand and discover different approached to building the app.</p>
-              As there are a number hell of organisations which offer basic similar services we broke down our product by the target audience - customers, tradies and misc. Customer side was fairly simple as this runs on a similar model that other organisations currrently employ and works well. The second element is based around tradies and what their current issues are with the services currently available. We then separated the core product concept, the innovational elements and then the extra special add-ons for the app.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="spacer">
-      </div>
-
+    </div>
 
     <div class="col-md-12" align="center">
       <div class="col-sm-6 col-md-3 col-md-offset-3 col-sm-offset-1">
@@ -267,29 +265,41 @@
   </div>
   <!-- Contact Me page -->
 
-  <div class="container-fluid contact_section" id = contact>
-    <div class="container">
-      <h1>If you feel like contacting me or just want to hear funny jokes, shoot me an email</h1>
-      <div class="col-md-6">
-        <form>
-          <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
-          <label for="nme"><span>What's your name?</span></label>
-          <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
-          <label for="msg"><span>What's your message?</span></label>
-          <input type="submit" value="Submit!" />
-        </form>
+  <div class="contact_section" id = contact>
+      <header>
+      	<h1>Contact Me</h1>
+      </header>
+
+      <div id="form">
+
+      <div class="fish" id="fish"></div>
+      <div class="fish" id="fish2"></div>
+
+      <form id="waterform" method="post">
+
+      <div class="formgroup" id="name-form">
+          <label for="name">Your name*</label>
+          <input type="text" id="name" name="name" />
       </div>
 
+      <div class="formgroup" id="email-form">
+          <label for="email">Your e-mail*</label>
+          <input type="email" id="email" name="email" />
+      </div>
+
+      <div class="formgroup" id="message-form">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message"></textarea>
+      </div>
+
+      	<input type="submit" value="Send your message!" />
+      </form>
+
+      <div class="notetext">
+        *Thanks to Captain Anonymous for this amazing contact form structure, I really enjoyed learning how it works.</span>
+      </div>
+      </div>
       <!-- Success message -->
       <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, we will get back to you shortly.
       </div>
-
-        <!-- Button -->
-    <div class="form-group">
-      <label class="col-md-4 control-label"></label>
-      <div class="col-md-4">
-        <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
-      </div>
-    </div>
-  </div>
 </div>
