@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'contact/index'
+  get 'contact', to: "contact#index"
 
-  get 'contact/mail'
+  post 'contact', to: "contact#mail"
 
   root 'pages#index'
 

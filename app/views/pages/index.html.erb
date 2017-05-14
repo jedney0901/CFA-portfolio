@@ -229,7 +229,7 @@
           <h2>Recipe-Finder</h2>
           <hr>
         </div>
-        <div class="portfolio-box portfolio-imagett" style = "<%= asset_path 'zoom-in.svg' %>">
+        <div class="portfolio-box portfolio-imagerf" style = "<%= asset_path 'zoom-in.svg' %>">
           <div class="captiontext">
             <p class="zoom-in-icon">Development of an application similar to those that you see such as Hipages.com.au and Serviceseeking.com.au.</p>
           </div>
@@ -242,13 +242,14 @@
       <div class="overlay7 overlay-data">
         <button type="button" class="overlay-close">Close</button>
         <div class="col-md-12">
-          <h1>Trutradie</h1>
+          <h1>Recipe Finder App</h1>
           <div class="col-md-6">
-            <img src="<%= asset_path 'tt_lp.png' %>" alt="Img1" class="img-thumbnail">
+            <img src="<%= asset_path 'recipefinderapp.png' %>" alt="Img1" class="img-thumbnail">
           </div>
           <div class="col-md-6">
-            This project presented my first real opportunity to work on a large scale application using a two market system. The core concept behind this was to build a system based on one goal: to make tradies business viable through the digital world. I was required as part of the marketing team which allowed me to understand and discover different approached to building the app.</p>
-            As there are a number hell of organisations which offer basic similar services we broke down our product by the target audience - customers, tradies and misc. Customer side was fairly simple as this runs on a similar model that other organisations currrently employ and works well. The second element is based around tradies and what their current issues are with the services currently available. We then separated the core product concept, the innovational elements and then the extra special add-ons for the app.
+            This was an application we built during class while at Coder Factory and it provided us our first understanding of what The recipe finder app takes input from a user depending on what ingredients they have in their cupboard and then uses a google API to search for recipes which include those ingredients.
+
+            If you have any allergies then we are able to tailor the search results based around your food rqeuirements and preferred food tastes. (reference: All recipes are pulled using the food2fork API which gives you access to a socially ranked recipe database and which includes ingredient search function.
           </div>
         </div>
       </div>
@@ -266,40 +267,12 @@
   <!-- Contact Me page -->
 
   <div class="contact_section" id = contact>
-      <header>
-      	<h1>Contact Me</h1>
-      </header>
+    <header>
+    	<h1>Contact Me</h1>
+    </header>
+    <%= render 'contact/index.html.erb' %>
 
-      <div id="form">
-
-      <div class="fish" id="fish"></div>
-      <div class="fish" id="fish2"></div>
-
-      <form id="waterform" method="post">
-
-      <div class="formgroup" id="name-form">
-          <label for="name">Your name*</label>
-          <input type="text" id="name" name="name" />
-      </div>
-
-      <div class="formgroup" id="email-form">
-          <label for="email">Your e-mail*</label>
-          <input type="email" id="email" name="email" />
-      </div>
-
-      <div class="formgroup" id="message-form">
-          <label for="message">Your message</label>
-          <textarea id="message" name="message"></textarea>
-      </div>
-
-      	<input type="submit" value="Send your message!" />
-      </form>
-
-      <div class="notetext">
-        *Thanks to Captain Anonymous for this amazing contact form structure, I really enjoyed learning how it works.</span>
-      </div>
-      </div>
-      <!-- Success message -->
-      <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, we will get back to you shortly.
-      </div>
+    <!-- Success message -->
+    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, we will get back to you shortly.
+    </div>
 </div>
