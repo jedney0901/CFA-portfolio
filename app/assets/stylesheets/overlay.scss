@@ -21,7 +21,7 @@
   font-weight:bold;
 }
 .menuButton:hover {
-  background-color:#5ABDAE;
+  background-color:#6DA1AD;
   color: white;
 
 }
@@ -34,7 +34,7 @@
 .overlay {
   width: 800px;
   max-width: 100%;
-  height: 600px;
+  height: 550px;
   max-height: 100%;
   background: #5798A0;
   overflow-y: scroll;
@@ -79,7 +79,8 @@
 .overlay p {
   align-content: center;
   color: white;
-  text-align: center;
+  text-align: left;
+  overflow-wrap: break-word;
 }
 
 .overlay ul li {
@@ -154,7 +155,7 @@
 
 .overlay2 {
   width: 800px;
-  height: 80%;
+  height: 70%;
   position:absolute;
   left:0;
   right:0;
@@ -164,7 +165,8 @@
   opacity: 0.97;
   overflow-y: scroll;
   overflow-x: hidden;
-  z-index: 1000
+  z-index: 1000;
+  border-radius: 10px;
 }
 
 .overlay2 h1 {
@@ -248,12 +250,13 @@
   margin-left:auto;
   margin-right:auto;
   width: 70%;
-  height: 80%;
+  height: 70%;
   background: #5798A0;
   opacity: 0.97;
   overflow-y: scroll;
   overflow-x: hidden;
-  z-index: 1000
+  z-index: 1000;
+  border-radius: 10px;
 }
 
 .overlay3 h1 {
@@ -292,7 +295,8 @@
   color: white;
   align-text: center;
   position: relative;
-  margin: 20px 20px 0 20px
+  margin: 20px 20px 0 20px;
+  font-size: 14px;
 }
 
 
@@ -338,12 +342,13 @@
   margin-left:auto;
   margin-right:auto;
   width: 70%;
-  height: 80%;
+  height: 70%;
   background: #5798A0;
   opacity: 0.97;
   overflow-y: scroll;
   overflow-x: hidden;
-  z-index: 1000
+  z-index: 1000;
+  border-radius: 10px;
 }
 
 .overlay4 h1 {
@@ -434,12 +439,13 @@
   margin-left:auto;
   margin-right:auto;
   width: 70%;
-  height: 80%;
+  height: 70%;
   background: #5798A0;
   opacity: 0.97;
   overflow-y: scroll;
   overflow-x: hidden;
-  z-index: 1000
+  z-index: 1000;
+  border-radius: 10px;
 }
 
 .overlay5 h1 {
@@ -531,12 +537,13 @@
   margin-left:auto;
   margin-right:auto;
   width: 70%;
-  height: 80%;
+  height: 70%;
   background: #5798A0;
   opacity: 0.97;
   overflow-y: scroll;
   overflow-x: hidden;
-  z-index: 1000
+  z-index: 1000;
+  border-radius: 10px;
 }
 
 .overlay6 h1 {
@@ -581,6 +588,7 @@
   height: 20%;
   color: white;
   position: relative;
+  font-size: 14px;
 }
 
 .overlay6 li {
@@ -627,12 +635,13 @@
   margin-left:auto;
   margin-right:auto;
   width: 70%;
-  height: 80%;
+  height: 70%;
   background: #5798A0;
   opacity: 0.97;
   overflow-y: scroll;
   overflow-x: hidden;
-  z-index: 1000
+  z-index: 1000;
+  border-radius: 10px;
 }
 
 .overlay7 h1 {

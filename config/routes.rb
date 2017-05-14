@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'contact/index'
+
+  get 'contact/mail'
+
   root 'pages#index'
 
   get 'pages/index'
