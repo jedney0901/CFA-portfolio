@@ -2,7 +2,9 @@
 
 Welcome to my portfolio README, this document will run you through the entire process for developing my portfolio site including creative concepts, wireframes and how my concepts changed over development. As an FYI, this will be something I continue to work on over the coming weeks in the lead up to me finishing my course and becoming a full stack developer.
 
-This site runs on the rails infrastructure which was my first time using something like this, there was a bit of a steep learning curve as I had to grasp the file structures and the underlying concepts which tie the system together.Tying this in using HTML and CSS was an easy concept though when it came to Javascript I didn't have much experience to draw on to help me implement some concepts:
+This site runs on the rails infrastructure which was my first time using something like this, there was a bit of a steep learning curve as I had to grasp the file structures and the underlying concepts which tie the system together.Tying this in using HTML and CSS was an easy concept though when it came to Javascript I didn't have much experience to draw on to help me implement some concepts.
+
+You can find a link to the site here: https://jedney-portfolio.herokuapp.com/
 
 Key features:
  - Smooth scroll: This took a bit of tinkering but was relatively easy to install once I understood how to implement it in with the rails framework.
